@@ -1,7 +1,7 @@
 import {useDispatch} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {AppDispatch} from '../redux/store';
-import {fetchMovies} from '../redux/actionCreators/moviesAC';
+import {fetchMovies, changeFavouriteStatus, removeMovie} from '../redux/actionCreators/moviesAC';
 
 export const useActions = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -9,6 +9,8 @@ export const useActions = () => {
   return bindActionCreators(
     {
       fetchMovies,
+      changeFavouriteStatus,
+      removeMovie,
     },
     dispatch
   );

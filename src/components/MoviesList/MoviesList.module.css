@@ -1,11 +1,13 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.loadingContainer {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-.loadingContainer {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
+.container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
