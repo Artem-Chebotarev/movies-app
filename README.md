@@ -6,7 +6,7 @@ https://objective-swanson-7fb981.netlify.app/
 
 1) В корне проекта создать файл .env по образцу env_sample.txt, куда нужно внести персональный ключ для API (https://www.themoviedb.org/documentation/api)
 
-2) Запустить в консоли следующие команды:
+2) Прописать в консоли следующие команды:
 
 ```bash
 npm i
