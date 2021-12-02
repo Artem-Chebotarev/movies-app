@@ -1,6 +1,6 @@
 ## Проект SPA приложения со списком карточек (популярных фильмов).
 
-https://objective-swanson-7fb981.netlify.app/
+https://artem-chebotarev.github.io/movies-app/
 
 <p align="center">
   <img src="home.png" width="450" alt="accessibility text">
