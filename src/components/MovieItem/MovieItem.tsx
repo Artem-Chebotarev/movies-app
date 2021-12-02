@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import {IMG_300} from '../../config/config';
+import {IMG_300, IMG_UNAVALABLE} from '../../config/config';
 import {ICON_BIN, ICON_LIKED, ICON_UNLIKED} from '../../constants/constants';
 import {useActions} from '../../hooks/useActions';
 import {IMovie} from '../../types/movies';
@@ -47,7 +47,11 @@ export const MovieItem: FC<MovieItemProps> = ({item}) => {
 
   return (
     <div className={styles.movie}>
-      <img className={styles.poster} src={`${IMG_300}${item.poster_path}`} alt={getMovieTitle(item)} />
+      <img
+        className={styles.poster}
+        src={item.poster_path ? `${IMG_300}${item.poster_path}` : IMG_UNAVALABLE}
+        alt={getMovieTitle(item)}
+      />
       <div className={styles.movieInfo}>
         <h4>{getMovieTitle(item)}</h4>
         {renderIcons()}
